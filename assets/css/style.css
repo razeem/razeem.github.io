@@ -185,19 +185,13 @@ h3 {
   background: url("../icons/acquia_cms.webp") center no-repeat;
   height: 41px;
 }
-.social.twitter-x:before {
-  background: url("../icons/twitter.com.ico") center no-repeat;
-}
-.social.twitter:before {
-  background: url("https://cdn3.iconfinder.com/data/icons/social-media-2026/60/Socialmedia_icons_Twitter-07-128.png") center no-repeat;
-}
 
-.social.pinterest:before {
-  background: url("https://cdn3.iconfinder.com/data/icons/social-media-2026/60/Socialmedia_icons_Pinterest-23-128.png") center no-repeat;
+.social.twitter-x:before {
+  background: url("https://cdn2.iconfinder.com/data/icons/threads-by-instagram/24/x-logo-twitter-new-brand-contained-64.png") center no-repeat;
 }
 
 .social.linked-in:before {
-  background: url("https://cdn3.iconfinder.com/data/icons/social-media-2026/60/Socialmedia_icons_LinkedIn-128.png") center no-repeat;
+  background: url("https://cdn2.iconfinder.com/data/icons/social-media-applications/64/social_media_applications_14-linkedin-64.png") center no-repeat;
 }
 
 .side-header {
