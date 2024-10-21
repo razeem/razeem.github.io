@@ -58,7 +58,7 @@ body:before {
   text-align: justify;
 }
 
-p.light {
+ul, p.light {
   color: #777;
 }
 
@@ -181,6 +181,13 @@ h3 {
   background-size: cover !important;
 }
 
+.social.acquia:before {
+  background: url("../icons/acquia_cms.webp") center no-repeat;
+  height: 41px;
+}
+.social.twitter-x:before {
+  background: url("../icons/twitter.com.ico") center no-repeat;
+}
 .social.twitter:before {
   background: url("https://cdn3.iconfinder.com/data/icons/social-media-2026/60/Socialmedia_icons_Twitter-07-128.png") center no-repeat;
 }
