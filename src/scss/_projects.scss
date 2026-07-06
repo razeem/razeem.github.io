@@ -90,6 +90,44 @@
   gap: 10px;
 }
 
+.head-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+// External "visit live site" icon link
+.ext-link {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  color: var(--text-soft);
+  text-decoration: none;
+  flex-shrink: 0;
+  transition: color var(--transition), border-color var(--transition), transform var(--transition);
+
+  &:hover {
+    color: var(--accent-2);
+    border-color: var(--accent-2);
+    transform: translateY(-1px);
+  }
+}
+
+// Inline links inside card text (e.g. the QSW centre sites)
+.project-card p a {
+  color: var(--accent-2);
+  text-decoration: none;
+  border-bottom: 1px dotted color-mix(in srgb, var(--accent-2) 60%, transparent);
+
+  &:hover {
+    border-bottom-style: solid;
+  }
+}
+
 // Expandable module details inside a card — rendered last so the
 // accordion bars align along the bottom of every card in a row
 .modules-details {
