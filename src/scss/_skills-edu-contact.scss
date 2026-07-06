@@ -1,0 +1,86 @@
+// Skills groups, education cards and the contact call-to-action.
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 22px;
+}
+
+.skill-group {
+  padding: 26px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-card);
+
+  h3 {
+    font-size: 0.85rem;
+    font-family: var(--font-mono);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent-2);
+    margin-bottom: 16px;
+  }
+}
+
+// Education
+.edu-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+
+.edu-card {
+  padding: 28px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-card);
+
+  h3 {
+    margin: 8px 0 6px;
+    font-size: 1.15rem;
+  }
+
+  p {
+    color: var(--text-soft);
+    font-size: 0.92rem;
+  }
+}
+
+.edu-year {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent-2);
+}
+
+.edu-note {
+  margin-top: 10px;
+  font-weight: 600;
+  color: var(--text) !important;
+}
+
+// Contact
+.contact-card {
+  text-align: center;
+  padding: 64px 32px;
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) + 8px);
+  background:
+    radial-gradient(500px 200px at 50% 0%, color-mix(in srgb, var(--accent-1) 16%, transparent), transparent 70%),
+    var(--bg-card);
+
+  h2 {
+    font-size: clamp(1.6rem, 3.5vw, 2.3rem);
+    letter-spacing: -0.02em;
+  }
+
+  p {
+    color: var(--text-soft);
+    margin-top: 10px;
+  }
+
+  .hero-cta {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "razeem-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio of Razeem Ahmad — Senior Drupal Developer & Tech Lead",
+  "private": true,
+  "scripts": {
+    "build": "webpack --mode production",
+    "watch": "webpack --mode development --watch"
+  },
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "mini-css-extract-plugin": "^2.9.2",
+    "sass": "^1.83.0",
+    "sass-loader": "^16.0.4",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^5.1.4"
+  }
+}

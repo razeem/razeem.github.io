@@ -1,252 +1,624 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Razeem Ahmad Resume</title>
-  <!-- Include the favicon link -->
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600'
-    rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Raleway:100'
-    rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Montserrat'
-    rel='stylesheet' type='text/css'>
+  <title>Razeem Ahmad — Senior Drupal Developer &amp; Tech Lead</title>
+  <meta name="description"
+    content="Razeem Ahmad B T — Senior Drupal Developer & Tech Lead. Acquia Certified Back-end Specialist (Drupal 10). 9+ years building Drupal platforms for government, education, healthcare, news and e-commerce.">
+  <link rel="canonical" href="https://razeem.github.io/">
 
-  <!-- Link to CSS -->
-  <link rel="stylesheet" href="assets/css/style.css" type='text/css'>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
-    }
+  <!-- Favicons -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+  <meta name="theme-color" content="#0b1120">
 
-    .container {
-      background-color: #fff;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-      margin-top: 30px;
-    }
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://razeem.github.io/">
+  <meta property="og:title" content="Razeem Ahmad — Senior Drupal Developer & Tech Lead">
+  <meta property="og:description"
+    content="Acquia Certified Back-end Specialist (Drupal 10). 9+ years delivering Drupal platforms for government, education, healthcare, news and e-commerce.">
+  <meta property="og:image" content="https://razeem.github.io/assets/icons/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ahmad_razeem">
+  <meta name="twitter:image" content="https://razeem.github.io/assets/icons/og-image.png">
 
-    h1 {
-      color: #333;
-    }
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap"
+    rel="stylesheet">
 
-    h2 {
-      color: #333;
-      border-bottom: 2px solid #333;
-      padding-bottom: 5px;
-    }
+  <link rel="stylesheet" href="assets/build/style.css">
 
-    p {
-      color: #555;
-    }
-
-    .section-divider {
-      height: 2px;
-      background-color: #333;
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
-
-    .section-content {
-      margin-top: 20px;
-    }
-  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Razeem Ahmad B T",
+    "jobTitle": "Senior Drupal Developer & Tech Lead",
+    "url": "https://razeem.github.io/",
+    "email": "mailto:razeem.ahmad@gmail.com",
+    "sameAs": [
+      "https://www.linkedin.com/in/razeem/",
+      "https://www.drupal.org/u/razeem",
+      "https://twitter.com/ahmad_razeem"
+    ]
+  }
+  </script>
 </head>
 
 <body>
-  <!-- PAGE STUFF -->
-  <div class="rela-block page">
-    <div class="rela-block top-bar">
-      <div class="caps name">
-        <div class="abs-center">Razeem Ahmad</div>
-      </div>
-    </div>
-    <div class="side-bar">
-      <div class="mugshot">
-        <div class="logo">
-          <svg viewbox="0 0 80 80" class="rela-block logo-svg">
-            <path d="M 10 10 L 52 10 L 72 30 L 72 70 L 30 70 L 10 50 Z"
-              stroke-width="2.5" fill="none" />
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#top">
+        <span class="brand-mark" aria-hidden="true">R</span>
+        <span class="brand-name">razeem<span class="accent">.dev</span></span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle color theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round">
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4m11.4-11.4 1.4-1.4" />
           </svg>
-          <p class="logo-text">RAZZ</p>
-        </div>
-      </div><br>
-
-      <p class="rela-block social linked-in"><a href="https://www.linkedin.com/in/razeem/">razeem</a></p>
-      <p class="rela-block social twitter-x"><a href="https://twitter.com/ahmad_razeem">ahmad_razeem</a></p>
-      <p class="rela-block social acquia"><a href="https://dev.acquia.com/public/registry?field_official_exam_name_taxonom_target_id=4446&field_company_target_id=All&field_city_value=&field_country_value=&title=razeem&field_province_state_value=&mail=&items_per_page=100">Acquia Certified Back-end Specialist - Drupal 10</a></p>
-      <span class="rela-block caps side-header">Expertise</span>
-      <div class="d-flex flex-wrap flex-start w-100">
-        <h3 class="rela-block list-thing">Drupal 10 9 8 7</h3>
-        <div class="d-flex flex-wrap flex-start w-100">
-          <p class="rela-block list-thing">Theming</p>
-          <p class="rela-block list-thing">Module development</p>
-          <p class="rela-block list-thing">Multi-lingual</p>
-          <p class="rela-block list-thing">Migration</p>
-          <p class="rela-block list-thing">Drush</p>
-          <p class="rela-block list-thing">Drupal Console</p>
-        </div>
-        <h3 class="rela-block list-thing">Hosting platforms</h3>
-        <div class="d-flex flex-wrap flex-start w-100">
-          <p class="rela-block list-thing">Acquia</p>
-          <p class="rela-block list-thing">Pantheon</p>
-        </div>
-        <h3 class="rela-block list-thing">ANGULAR</h3>
-        <div class="d-flex flex-wrap flex-start w-100">
-          <p class="rela-block list-thing">Material</p>
-          <p class="rela-block list-thing">Tailwind</p>
-        </div>
-        <p class="rela-block list-thing">GIT</p>
-        <p class="rela-block list-thing">PHP</p>
-        <p class="rela-block list-thing">Python</p>
-        <p class="rela-block list-thing">Composer</p>
-        <p class="rela-block list-thing">Linux</p>
-        <p class="rela-block list-thing">BASH</p>
-        <p class="rela-block list-thing">JavaScript</p>
-        <p class="rela-block list-thing">jQuery</p>
-        <p class="rela-block list-thing">HTML</p>
-        <p class="rela-block list-thing">CSS</p>
-        <p class="rela-block list-thing">Flex</p>
-        <p class="rela-block list-thing">Bootstrap</p>
-        <p class="rela-block list-thing">MySQL</p>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z" />
+          </svg>
+        </button>
+        <button class="icon-btn nav-burger" id="nav-burger" type="button" aria-label="Open menu"
+          aria-expanded="false" aria-controls="nav-links">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round">
+            <path d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+        </button>
       </div>
-      <div>
-        <span class="rela-block caps side-header">Education</span>
-        <p class="rela-block list-thing">M. Tech (CS in specialization of Cyber
-          Forensics and Information Security), CUSAT</p>
-        <p class="rela-block list-thing">B. Tech (Computer Science), CUSAT</p>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== Hero ===== -->
+    <section class="hero container">
+      <div class="hero-text reveal">
+        <p class="eyebrow">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true">
+            <path d="M12 1.6 9 7 3 7.9l4.4 4.3-1 6 5.6-3 5.6 3-1-6L21 7.9 15 7z" />
+          </svg>
+          Acquia Certified Back-end Specialist — Drupal 10
+        </p>
+        <h1>Razeem Ahmad <span class="thin">B T</span></h1>
+        <h2 class="hero-title"><span class="gradient-text">Senior Drupal Developer</span> &amp; Tech Lead</h2>
+        <p class="hero-lede">
+          I architect, build and lead Drupal platforms — from 15-site news multisites and government portals
+          to university websites, e-commerce and headless APIs. Currently leading Drupal engineering at
+          Applab (Appstation), Qatar.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-ghost" href="#contact">Get in Touch</a>
+        </div>
+        <ul class="social-row" aria-label="Profiles">
+          <li><a href="https://www.linkedin.com/in/razeem/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.24 8.31h4.52V23H.24zM8.34 8.31h4.33v2h.06c.6-1.14 2.08-2.34 4.28-2.34 4.57 0 5.42 3.01 5.42 6.92V23h-4.52v-7.13c0-1.7-.03-3.89-2.37-3.89-2.37 0-2.73 1.85-2.73 3.76V23H8.34z" />
+              </svg></a></li>
+          <li><a href="https://www.drupal.org/u/razeem" target="_blank" rel="noopener" aria-label="Drupal.org">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path d="M15.78 5.11C14.45 3.78 13.19 2.52 12 .38c-1.19 2.14-2.45 3.4-3.78 4.73C6.22 7.12 3.5 9.85 3.5 13.62A8.4 8.4 0 0 0 12 22a8.4 8.4 0 0 0 8.5-8.38c0-3.77-2.72-6.5-4.72-8.51zM7.6 16.75c-.42-.01-1.96-2.67.9-5.5l1.9 2.07a.16.16 0 0 1-.01.24c-.45.46-2.38 2.4-2.62 3.07-.05.14-.12.13-.17.12zM12 19.13a2.9 2.9 0 0 1-2.9-2.9c0-.77.3-1.47.79-1.99.36-.36 2.11-2.02 2.11-2.02s1.72 1.69 2.1 2.02a2.9 2.9 0 0 1-2.1 4.89zm5.06-2.42c-.05.01-.11.02-.16-.12-.2-.56-1.24-1.5-1.24-1.5s1.79-2.31 1.94-2.72c.42 1.14.62 3.71-.54 4.34z" />
+              </svg></a></li>
+          <li><a href="https://github.com/razeem" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.15c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.53-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11.04 11.04 0 0 1 5.78 0c2.2-1.49 3.16-1.18 3.16-1.18.63 1.59.24 2.76.12 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.66.41.36.78 1.06.78 2.14v3.17c0 .31.2.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z" />
+              </svg></a></li>
+          <li><a href="mailto:razeem.ahmad@gmail.com" aria-label="Email">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="m22 7-10 6L2 7" />
+              </svg></a></li>
+        </ul>
       </div>
+      <div class="hero-card reveal" aria-hidden="true">
+        <div class="avatar">
+          <svg viewBox="0 0 80 80" width="88" height="88">
+            <path d="M 10 10 L 52 10 L 72 30 L 72 70 L 30 70 L 10 50 Z" stroke="currentColor" stroke-width="2.5"
+              fill="none" />
+            <text x="40" y="46" text-anchor="middle" font-size="17" font-weight="700" fill="currentColor"
+              font-family="Inter, sans-serif">RAZZ</text>
+          </svg>
+        </div>
+        <div class="stats">
+          <div class="stat"><span class="stat-num" data-count="9">9+</span><span class="stat-label">Years of
+              experience</span></div>
+          <div class="stat"><span class="stat-num" data-count="20">20+</span><span class="stat-label">Projects
+              delivered</span></div>
+          <div class="stat"><span class="stat-num">15</span><span class="stat-label">Sites in one
+              multisite</span></div>
+          <div class="stat"><span class="stat-num">7→11</span><span class="stat-label">Drupal versions
+              mastered</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section id="about" class="section container">
+      <h2 class="section-title reveal"><span class="section-num">01</span> About</h2>
+      <div class="about-grid">
+        <p class="about-text reveal">
+          I'm a Drupal specialist with 9+ years in the industry, currently working as a
+          <strong>Team Lead at Appstation (Applab), Qatar</strong>. I've led engineering teams across the full
+          Drupal spectrum — module development, theming, complex migrations, multilingual builds, headless
+          REST APIs — and shipped platforms for organisations like Qatar University, Qatar's Ministry of
+          Justice, Doctors Without Borders, UN Human Rights (OHCHR) and Bayer.
+        </p>
+        <ul class="about-highlights reveal">
+          <li>Technical leadership of cross-functional FE / BE / QA teams</li>
+          <li>Process standardisation — automated quality checks &amp; baseline Docker environments</li>
+          <li>Deployments on Azure App Services &amp; VMs, Acquia and Pantheon</li>
+          <li>Drupal 9 → 10 upgrades and large-scale content migrations</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Experience ===== -->
+    <section id="experience" class="section container">
+      <h2 class="section-title reveal"><span class="section-num">02</span> Experience</h2>
+      <ol class="timeline">
+        <li class="timeline-item reveal">
+          <div class="timeline-meta"><span class="timeline-date">Nov 2024 — Present</span><span
+              class="badge badge-current">Current</span></div>
+          <h3>Team Lead <span class="at">@ Appstation Pvt. Ltd. (Applab), Qatar</span></h3>
+          <ul>
+            <li>Technical Lead for Drupal 11 projects on continuous development work — Qatar University, Ministry
+              of Justice, Qatar Stars League and the Qatar Social Work centre websites, plus unreleased
+              middleware and AI-platform builds.</li>
+            <li>Standardised delivery processes: automated quality checkers and a baseline Docker environment
+              across projects.</li>
+            <li>Lead development and deployment of projects to Microsoft Azure App Services and VMs.</li>
+          </ul>
+        </li>
+        <li class="timeline-item reveal">
+          <div class="timeline-meta"><span class="timeline-date">Nov 2023 — Nov 2024</span></div>
+          <h3>Senior Software Engineer <span class="at">@ Axelerant Technologies (Remote)</span></h3>
+          <ul>
+            <li>Technical Lead on Drupal continuous-development engagements (Doctors Without Borders, OHCHR,
+              American Medical Association).</li>
+            <li>Drupal 9 → 10 upgrades; deployments and core / contrib module updates.</li>
+          </ul>
+        </li>
+        <li class="timeline-item reveal">
+          <div class="timeline-meta"><span class="timeline-date">Nov 2021 — Nov 2023</span></div>
+          <h3>Senior Drupal Developer — L1 <span class="at">@ Srijan Technologies (Remote)</span></h3>
+          <ul>
+            <li>Senior developer on Drupal 8 / 9 platforms, including a 15-site news multisite (Crain).</li>
+            <li>Active role in deployments and core / contrib software updates.</li>
+          </ul>
+        </li>
+        <li class="timeline-item reveal">
+          <div class="timeline-meta"><span class="timeline-date">Nov 2019 — Nov 2021</span></div>
+          <h3>Drupal Developer <span class="at">@ 4spots, Technopark TVM (Hybrid)</span></h3>
+          <ul>
+            <li>Architect for websites in Drupal 7, 8 and 9; deployments and module updates.</li>
+            <li>Angular projects with Drupal as the backend over REST APIs.</li>
+          </ul>
+        </li>
+        <li class="timeline-item reveal">
+          <div class="timeline-meta"><span class="timeline-date">Mar 2019 — Oct 2019</span></div>
+          <h3>Programmer Analyst <span class="at">@ Cognizant Technology Solutions, Kochi</span></h3>
+          <ul>
+            <li>Estimation, development and maintenance of Drupal 8 websites.</li>
+          </ul>
+        </li>
+        <li class="timeline-item reveal">
+          <div class="timeline-meta"><span class="timeline-date">Jan 2017 — Feb 2019</span></div>
+          <h3>PHP Developer <span class="at">@ 4spots, Technopark TVM</span></h3>
+          <ul>
+            <li>Development and maintenance of Drupal 7 / 8 websites; deployments and software updates.</li>
+          </ul>
+        </li>
+        <li class="timeline-item reveal">
+          <div class="timeline-meta"><span class="timeline-date">Jun 2016 — Dec 2016</span></div>
+          <h3>M.Tech Intern, Cyber Security Group <span class="at">@ CDAC, TVM</span></h3>
+          <ul>
+            <li>Built a Live Forensic Analyzer for macOS RAM dumps — virtual-to-physical address translation,
+              running-process extraction, DTB locator, XML converter.</li>
+          </ul>
+        </li>
+        <li class="timeline-item reveal">
+          <div class="timeline-meta"><span class="timeline-date">2013 — 2014</span></div>
+          <h3>Web Developer <span class="at">@ Graffiti Technologies, TVM</span></h3>
+          <ul>
+            <li>LAMP web applications; CMS work on Joomla and Drupal; vehicle-service scheduler ERP.</li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section id="projects" class="section container">
+      <h2 class="section-title reveal"><span class="section-num">03</span> Projects</h2>
+
+      <div class="filter-bar reveal" role="group" aria-label="Filter projects">
+        <button class="chip is-active" data-filter="all" type="button">All</button>
+        <button class="chip" data-filter="d11" type="button">Drupal 11</button>
+        <button class="chip" data-filter="d10" type="button">Drupal 10</button>
+        <button class="chip" data-filter="d9" type="button">Drupal 9</button>
+        <button class="chip" data-filter="d8" type="button">Drupal 8</button>
+        <button class="chip" data-filter="lead" type="button">Tech Lead</button>
+        <button class="chip" data-filter="migration" type="button">Migration</button>
+        <button class="chip" data-filter="api" type="button">API / Angular</button>
+      </div>
+
+      <div class="projects-grid">
+
+        <article class="project-card featured reveal" data-tags="d11 lead">
+          <div class="project-head">
+            <h3>Qatar University</h3>
+            <span class="badge badge-current">Current</span>
+          </div>
+          <p>Drupal 11 platform for Qatar's national university. Technical Lead: component-based theming with
+            Single Directory Components on Bootstrap 5, config-sync driven delivery, Playwright QA automation,
+            GrumPHP / PHPStan quality gates and Dockerised environments deployed via Azure Pipelines.</p>
+          <p>Engineered, architected and co-authored 20+ bespoke modules for the platform — from AI content
+            indexing and visual editing tools to editorial workflow and access control.</p>
+          <details class="modules-details">
+            <summary>Explore the custom modules</summary>
+            <ul class="module-list">
+              <li><strong>Generic AI Indexer</strong> — high-performance JSON API that transforms nodes,
+                paragraphs and media into clean, view-mode-driven structured data for AI ingestion — resolving
+                translations, revisions and nested content with recursion-safe rendering.</li>
+              <li><strong>Universal Header Resolver</strong> — lets each college or section present its own
+                site header: config entities bind a menu and a config page to weighted trigger conditions
+                (college taxonomy, content type), with optional per-node overrides.</li>
+              <li><strong>Image Marker Paragraphs</strong> — click-and-drag visual widget to place hotspot
+                markers on an image at percentage positions, each marker rendering any paragraph as its detail
+                content; ships its own paragraph types and SDC components, and degrades to manual X/Y entry
+                without JS.</li>
+              <li><strong>Paragraph Revision Compare</strong> — paragraph-aware diff between two node revisions
+                for content approvers: classifies each paragraph as added, removed or changed, pairing by
+                stable ID and recursing into nested paragraph structures.</li>
+              <li><strong>User Access Scope</strong> — maps users to content scopes (taxonomy-based or flat
+                realm) and enforces visibility, editing and creation through Drupal's node-access grants;
+                emits review-workflow notifications on moderation transitions.</li>
+              <li><strong>Notifications</strong> — CMS notification subsystem recording content-state changes
+                (submitted / approved / rejected) and surfacing them in a top-bar bell with live AJAX counts,
+                plus per-user cron cleanup.</li>
+              <li><strong>University Org Mapper</strong> — org-node entity with parent / weight hierarchies,
+                a fast tree-editing UI, and a custom field type so any entity can embed an organisational
+                chart.</li>
+              <li><strong>Advanced Menu Breadcrumb</strong> — centralises all breadcrumb logic into one
+                UI-configurable module supporting menu-trail and custom per-content-type strategies.</li>
+              <li><strong>Inner Page Menu</strong> — per-page navigation menus managed inline on the content
+                edit form: each page silently owns its own auto-provisioned menu with drag-and-drop
+                hierarchy.</li>
+              <li><strong>Migration Utilities</strong> — a toolbox of ~15 reusable Migrate API source / process
+                plugins covering HTML extraction, value shaping, reference building and file handling.</li>
+            </ul>
+          </details>
+          <ul class="tags">
+            <li>Drupal 11</li><li>20+ Custom Modules</li><li>SDC + Bootstrap 5</li><li>AI Indexing</li>
+            <li>Azure DevOps</li><li>Docker</li><li>Tech Lead</li>
+          </ul>
+        </article>
+
+        <article class="project-card featured reveal" data-tags="d11 lead">
+          <div class="project-head">
+            <h3>Ministry of Justice, Qatar</h3>
+            <span class="badge badge-current">Current</span>
+          </div>
+          <p>Government portal for Qatar's Ministry of Justice on Drupal 11 (Drupal CMS). Leading the engineering
+            team on continuous development — bilingual government content, Solr search, custom theme pipeline
+            synced from the design system's HTML repo, Docker + Azure Pipelines delivery to App Services and
+            VMs, with GrumPHP / PHPStan / PHPCS quality gates.</p>
+          <details class="modules-details">
+            <summary>Explore the custom modules</summary>
+            <ul class="module-list">
+              <li><strong>Menu Query Fix</strong> — real query strings and per-language (EN / AR) URL fragments
+                on menu links, layered on the link-attributes widget.</li>
+              <li><strong>Link Enhancements</strong> — adds a #fragment option to link fields, normalised into
+                the rendered URL on both formatter and SDC render paths.</li>
+              <li><strong>iCal</strong> — endpoint that streams downloadable .ics calendar files for events
+                from query parameters, timezone-aware.</li>
+            </ul>
+          </details>
+          <ul class="tags">
+            <li>Drupal 11</li><li>Government</li><li>Solr</li><li>Azure DevOps</li><li>Tech Lead</li>
+          </ul>
+        </article>
+
+        <article class="project-card reveal" data-tags="d11 lead">
+          <div class="project-head">
+            <h3>Qatar Stars League</h3>
+            <span class="badge badge-current">Current</span>
+          </div>
+          <p>Official website of Qatar's premier professional football league (qsl.qa) — news, fixtures and
+            results, team and player profiles, galleries and ticketing, with a careers multisite. Maintenance
+            and continuous enhancement on Drupal 11 with Docker / Kubernetes and Azure Pipelines delivery.</p>
+          <ul class="tags"><li>Drupal 11</li><li>Sports</li><li>Kubernetes</li><li>Azure DevOps</li>
+            <li>Maintenance</li></ul>
+        </article>
+
+        <article class="project-card reveal" data-tags="d9">
+          <div class="project-head">
+            <h3>Qatar Social Work — Centre Websites</h3>
+            <span class="badge badge-current">Current</span>
+          </div>
+          <p>Maintenance of a Drupal 9 multisite serving nine Qatar Social Work centre websites — Dreama, Ehsan,
+            Shafallah, Wifaq, Aman, Nama, Al Noor, Best Buddies and Daam — covering bilingual content,
+            module upgrades, live-chat and AI-chat integrations, and Dockerised deployments.</p>
+          <ul class="tags"><li>Drupal 9</li><li>Multisite ×9</li><li>Multilingual</li><li>Maintenance</li></ul>
+        </article>
+
+        <article class="project-card reveal" data-tags="api lead">
+          <div class="project-head">
+            <h3>QM — Mobile Services Middleware</h3>
+            <span class="badge badge-dev">Unreleased</span>
+          </div>
+          <p>Drupal as an API middleware between a Flutter mobile app and Oracle / SharePoint back-office
+            systems. Azure AD SSO with custom entities storing Firebase tokens and user groups, topic-based
+            push-notification management (all users, groups or individuals), forms management, audit services
+            and full request / response logging.</p>
+          <details class="modules-details">
+            <summary>Explore the custom modules</summary>
+            <ul class="module-list">
+              <li><strong>API Middleware</strong> — configuration-driven middleware engine mapping REST
+                endpoints to Dynamics CRM APIs (GET / POST / PATCH) entirely through YAML: fetchXml queries,
+                request-parameter mapping, chaining values across API responses, field mapping between CRM keys
+                and the mobile app's keys, output shaping (combined / separate) and custom-function fallbacks
+                for complex flows — new integrations are added without writing code.</li>
+            </ul>
+          </details>
+          <ul class="tags"><li>Drupal</li><li>Middleware API</li><li>Azure AD SSO</li><li>Firebase</li>
+            <li>Flutter</li></ul>
+        </article>
+
+        <article class="project-card reveal" data-tags="api lead">
+          <div class="project-head">
+            <h3>Ashghal — AI Avatar Knowledge Platform</h3>
+            <span class="badge badge-dev">Unreleased</span>
+          </div>
+          <p>Admin platform powering an AI avatar for Qatar's Public Works Authority. Categorised bilingual
+            (Arabic / English) document management for laws, regulations, FAQs and news with bulk upload,
+            unanswered-question logging from avatar interactions for retraining, and APIs feeding the avatar —
+            integrating with MS SQL Server.</p>
+          <details class="modules-details">
+            <summary>Explore the custom modules</summary>
+            <ul class="module-list">
+              <li><strong>AI Document Manager</strong> — manages the avatar's bilingual knowledge base:
+                category-driven folder trees for laws, regulations, FAQs and news (PDF / DOCX) kept separately
+                for Arabic and English, bulk upload per category, and a log of unanswered avatar questions
+                where admins review, categorise and add responses that feed future training — all exposed to
+                the avatar through APIs.</li>
+            </ul>
+          </details>
+          <ul class="tags"><li>Drupal</li><li>AI Integration</li><li>Multilingual</li><li>REST API</li>
+            <li>MS SQL</li></ul>
+        </article>
+
+        <article class="project-card reveal" data-tags="d10 lead">
+          <div class="project-head"><h3>Doctors Without Borders (MSF)</h3></div>
+          <p>NGO website hosted on Pantheon. Technical Lead overseeing ongoing development — guiding Front-End,
+            Back-End and QA teams on continuous-delivery tasks and maintaining smooth deployments.</p>
+          <ul class="tags"><li>Drupal 10</li><li>Pantheon</li><li>Tech Lead</li></ul>
+        </article>
+
+        <article class="project-card reveal" data-tags="d10 lead">
+          <div class="project-head"><h3>OHCHR — UN Human Rights</h3></div>
+          <p>Technical Lead for a subsite within the main UN Human Rights website, built on the design systems
+            used by the main site.</p>
+          <ul class="tags"><li>Drupal 10</li><li>Design System</li><li>Tech Lead</li></ul>
+        </article>
+
+        <article class="project-card reveal" data-tags="d10 lead">
+          <div class="project-head"><h3>National Health Equity Grand Rounds</h3></div>
+          <p>American Medical Association website hosted on Acquia. Technical Lead for continuous development
+            tickets; owned deployments and release operations.</p>
+          <ul class="tags"><li>Drupal 10</li><li>Acquia</li><li>Tech Lead</li></ul>
+        </article>
+
+        <article class="project-card reveal" data-tags="d9 migration lead">
+          <div class="project-head"><h3>Crain Communications — News Network</h3></div>
+          <p>A package of 15 news sites on a Drupal 9 multisite. Senior engineer on theme redesign and CORE-site
+            support: migrated Panels to Layout Builder via Drush, built a REST-based content-sync module for the
+            transition period, performance profiling with XHProf + DDEV, and post-migration log analysis to
+            recover failed nodes. Added a new category site with a profile-configured sub-theme.</p>
+          <ul class="tags"><li>Drupal 9</li><li>Multisite ×15</li><li>Layout Builder</li><li>Migration</li>
+            <li>Performance</li></ul>
+        </article>
+
+        <article class="project-card reveal" data-tags="d9 migration lead">
+          <div class="project-head"><h3>Wedding Spot Blog — SquareSpace → Drupal</h3></div>
+          <p>Migrated a SquareSpace site to Drupal 9 as a subsite of an existing multisite. Led a team of 3:
+            migration YAML for XML source content, inline body images converted to media entities referenced in
+            CKEditor, Acquia Site Studio, Lando environment and Drush aliases.</p>
+          <ul class="tags"><li>Drupal 9</li><li>XML Migration</li><li>Site Studio</li><li>Team Lead</li></ul>
+        </article>
+
+        <article class="project-card reveal" data-tags="d9">
+          <div class="project-head"><h3>Pharma — FDA Drug-Approval Sites</h3></div>
+          <p>Four sites supporting the FDA approval of a cancer drug: three Drupal sites built with Layout
+            Builder and custom blocks, one custom-PHP site. Built the foundational block library — fields,
+            display modes and layout styles — for the front-end team.</p>
+          <ul class="tags"><li>Drupal</li><li>Layout Builder</li><li>Custom PHP</li></ul>
+        </article>
+
+        <article class="project-card reveal" data-tags="d8 api">
+          <div class="project-head"><h3>Ertiqa — NGO Platform &amp; Portal</h3></div>
+          <p>Charity platform for refurbishing donated computers. Drupal 8 multisite (public site + portal) with
+            JWT-secured REST APIs consumed by an Angular front end and Android / iOS apps. Built product and
+            order APIs with full state transitions from donation intake to delivery, plus Angular modules for
+            product management, requests and a volunteer gamification interface.</p>
+          <ul class="tags"><li>Drupal 8</li><li>Angular</li><li>REST API</li><li>JWT</li><li>Multisite</li></ul>
+        </article>
+
+        <article class="project-card reveal" data-tags="d8 api">
+          <div class="project-head"><h3>Al Badr Opticals — E-commerce</h3></div>
+          <p>Drupal Commerce store for an opticals retailer, with a custom module linking lens products to frame
+            products, Ditto SDK integration for virtual try-on and a custom MyFatoorah payment-gateway plugin.</p>
+          <ul class="tags"><li>Drupal 8</li><li>Commerce</li><li>Payment Gateway</li><li>3rd-party SDK</li></ul>
+        </article>
+
+        <article class="project-card reveal" data-tags="d8">
+          <div class="project-head"><h3>Bayer — Healthcare Multisite</h3></div>
+          <p>Healthcare multisite on Acquia Cloud Site Factory covering pharma, animal health and HR. Effort
+            estimation from unique components and pages, interim post-delivery support, and subsite content
+            using the Domain Access module on the Lightning distribution.</p>
+          <ul class="tags"><li>Drupal 8</li><li>Acquia WSF</li><li>Domain Access</li></ul>
+        </article>
+
+        <article class="project-card reveal" data-tags="d8 lead">
+          <div class="project-head"><h3>Bahrain Islamic Bank</h3></div>
+          <p>Corporate banking site on the Lightning distribution. Lead developer: custom CSV importer for lucky
+            draw winners into a custom entity with filtered views listing, and Google Maps integration with
+            AJAX-filtered views for branch locations.</p>
+          <ul class="tags"><li>Drupal 8</li><li>Custom Entity</li><li>Google Maps</li><li>Lead</li></ul>
+        </article>
+
+        <article class="project-card reveal" data-tags="d8 api lead">
+          <div class="project-head"><h3>Marassi Al Bahrain — Real Estate</h3></div>
+          <p>Real-estate site for an Eagle Hills subsidiary. Lead developer: queue-worker integrations pulling
+            project timelines and images from Microsoft Azure, latest apartments / villas from CRM, and inquiry
+            forms writing back to CRM.</p>
+          <ul class="tags"><li>Drupal 8</li><li>CRM Integration</li><li>Azure</li><li>Queue API</li></ul>
+        </article>
+
+        <article class="project-card reveal" data-tags="d8">
+          <div class="project-head"><h3>Arbah Capital</h3></div>
+          <p>Website for a Saudi / Bahrain investment firm — career forms, board of members, and annual-report
+            listings with views filtering.</p>
+          <ul class="tags"><li>Drupal 8</li><li>Views</li></ul>
+        </article>
+
+        <article class="project-card reveal" data-tags="d8 api">
+          <div class="project-head"><h3>TAM Express — Courier Platform</h3></div>
+          <p>Courier-services platform handling administrator / driver interaction and package allocation, with
+            APIs powering the driver Android app.</p>
+          <ul class="tags"><li>Drupal 8</li><li>REST API</li><li>Android</li></ul>
+        </article>
+
+        <article class="project-card reveal" data-tags="api">
+          <div class="project-head"><h3>MacLift — Memory Forensics Tool</h3></div>
+          <p>Windows application (C#) from my M.Tech project: analyses macOS RAM snapshots to retrieve running
+            processes and their details.</p>
+          <ul class="tags"><li>C#</li><li>Forensics</li><li>Research</li></ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section id="skills" class="section container">
+      <h2 class="section-title reveal"><span class="section-num">04</span> Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-group reveal">
+          <h3>Drupal</h3>
+          <ul class="tags">
+            <li>Drupal 11 / 10 / 9 / 8 / 7</li><li>Module Development</li><li>Theming</li>
+            <li>Single Directory Components</li><li>Migration API</li><li>Multilingual</li>
+            <li>Layout Builder</li><li>Site Studio</li><li>Drupal Commerce</li><li>Drush</li>
+            <li>Config Management</li>
+          </ul>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Backend &amp; APIs</h3>
+          <ul class="tags">
+            <li>PHP</li><li>Composer</li><li>REST APIs</li><li>JWT Auth</li><li>MySQL</li><li>Python</li>
+          </ul>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Frontend</h3>
+          <ul class="tags">
+            <li>JavaScript</li><li>Angular</li><li>Angular Material</li><li>Tailwind</li><li>jQuery</li>
+            <li>Twig</li><li>Bootstrap</li><li>CSS / Flex</li>
+          </ul>
+        </div>
+        <div class="skill-group reveal">
+          <h3>DevOps &amp; Hosting</h3>
+          <ul class="tags">
+            <li>Acquia</li><li>Pantheon</li><li>Azure Pipelines</li><li>Azure App Services / VMs</li>
+            <li>Docker</li><li>Lando</li><li>DDEV</li><li>Solr</li><li>Linux / Bash</li><li>Git</li>
+            <li>GrumPHP / PHPStan / PHPCS</li><li>Playwright QA</li>
+          </ul>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Leadership &amp; Process</h3>
+          <ul class="tags">
+            <li>Team Leadership</li><li>Agile / Scrum</li><li>Jira</li><li>Confluence</li><li>Estimation</li>
+            <li>Code Review</li>
+          </ul>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Certification</h3>
+          <ul class="tags">
+            <li><a href="https://certification.acquia.com/registry?fname=razeem&exam=All" target="_blank"
+                rel="noopener">Acquia Certified Back-end Specialist — Drupal 10</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Education ===== -->
+    <section id="education" class="section container">
+      <h2 class="section-title reveal"><span class="section-num">05</span> Education</h2>
+      <div class="edu-grid">
+        <div class="edu-card reveal">
+          <span class="edu-year">2014 — 2016</span>
+          <h3>M.Tech — Computer Science</h3>
+          <p>Cyber Forensics &amp; Information Security · CUSAT<br>
+            ER&amp;DCI-IT, C-DAC Campus, Trivandrum</p>
+          <p class="edu-note">CGPA 9.39 · 6<sup>th</sup> Rank</p>
+        </div>
+        <div class="edu-card reveal">
+          <span class="edu-year">2008 — 2012</span>
+          <h3>B.Tech — Computer Science</h3>
+          <p>CUSAT · College of Engineering, Attingal</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section id="contact" class="section container">
+      <div class="contact-card reveal">
+        <h2>Let's build something with Drupal.</h2>
+        <p>Open to consulting, architecture reviews and technical-leadership conversations.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="mailto:razeem.ahmad@gmail.com">razeem.ahmad@gmail.com</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/razeem/" target="_blank"
+            rel="noopener">LinkedIn /in/razeem</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Razeem Ahmad B T · Built with plain HTML, CSS &amp; JS · Hosted on GitHub
+        Pages</p>
+      <a class="to-top" href="#top" aria-label="Back to top">↑ Top</a>
     </div>
-    <div class="rela-block content-container">
-      <h2 class="rela-block caps title">Senior Drupal Developer / Tech Lead</h2>
-      <div class="rela-block separator"></div>
-      <div class="rela-block caps greyed">Profile</div>
-      <p class="long-margin">Acquia Certified Back-end Specialist - Drupal 10. Experienced Drupal Developer with a demonstrated
-        history of working in the internet industry. Skilled in Drupal 7, 8, 9, 10
-        Angular, Laravel currently concentrating on Drupal.</p>
-      <div class="rela-block caps greyed">Experience</div>
+  </footer>
 
-      <h3>News agency website having multiple sites</h3>
-      <p class="light">A package of news sites configured with Drupal 9 multisite setup with 15 sites.
-        Content Analysis and Redesign migration, Creating reusable features/modules for
-        any site in the setup, Manage the profile modules and themes.</p>
-        
-      <h4>Senior Drupal Engineer In Theme Redesign</h4>
-      <ul>
-        <li>Setting up the migration of components such as panels to Layout Builder using</li>
-        <li>Drush commands for various content types.</li>
-        <li>Setting up a module for migrating the contents in the transition period from old</li>
-        <li>instance to the new instance using REST APIs.</li>
-        <li>Performance optimization post migration with help of XHProf with DDEV.</li>
-        <li>Analysis of the post migration logs and analyzing it with help of Excel sheets like identifying the failed nodes and Manually handling them.</li>
-      </ul>
-      <h4>Senior Drupal Engineer In Support of CORE Sites</h4>
-      <ul>
-        <li>Work on support tickets on Bugs, Performance related and to add new features.</li>
-        <li>Worked on adding a new site for a new category with a new sub theme configured from the profile.</li>
-      </ul>
-
-      <h3>Migration of a SquareSpace to Drupal</h3>
-      <p class="light">Drupal 9 migration from SquareSpace. Multisite configuration, Acquia site
-      studio, lando, XML migration, Image migration.</p>
-        
-      <h4>Setting up the work environment and associate lead</h4>
-      <ul>
-        <li>Configuring the site as a subsite inside an existing Drupal project with subfolder pointing, setting up Lando, Drush alias etc.</li>
-        <li>Lead the project of 3 members.</li>
-      </ul>
-      <h4>Migration</h4>
-      <ul>
-        <li>Setting up the migration yml file to migrate the contents which is received from squarespace site which is in xml format to the site.</li>
-        <li>Migration of the inline images in the body field which needs to be placed as a media and referred inside the CKEditor</li>
-      </ul>
-
-      <h3>Development of 4 sites for a pharmaceutical company</h3>
-      <p class="light">Development of 4 sites for the FDA approval for a cancer drug of a
-      pharmaceutical company. Out of which one site was with custom PHP as per
-      requirement. and 3 Drupal Sites are developed using Layout Builder and custom
-      blocks.</p>
-        
-      <h4>Setting up the work environment</h4>
-      <ul>
-        <li>Configuring the site using Lando</li>
-        <li>Development of basic blocks with essential fields, display modes and layout styles for the Front End team.</li>
-      </ul>
-      
-      <h3>Development of an ecommerce website for an opticals</h3>
-      <p class="light">Drupal 8 ecommerce site done using drupal commerce. It also includes custom
-      module implementation for connecting lenses to frames where both are products.</p>
-      <h4>Setting up the work environment and 3rd party integration</h4>
-      <ul>
-        <li>Configure the site using Lando, setting up the basic site and configure the drupal commerce module, configure products and variations.</li>
-        <li>Integration of Ditto SDK for Virtual Try on</li>
-        <li>Integration of a payment gateway called MyFatoorah by creating a plugin.</li>
-      </ul>
-
-      <h3>Multi site with a portal done in Angular</h3>
-      <p class="light">It was a project developed for an NGO which handles Refurbished products donated
-      by companies and individuals to non-profit organizations and students. Consists
-      of a Drupal 8 Multi site setup with a portal done interface in Angular. An NGO
-      website plus a portal with REST API for handling and processing refurbished
-      computers and laptops and reaching to people who request. Portal serves APIs for
-      Angular Web Frontend, Android and IOS Application.</p>
-        
-      <h4>Setting up the work environment</h4>
-      <ul>
-        <li>Configure the site using Lando, with a multi site setup one for the Backend portal and another for the organization related contents for the public. Configuration management for the multisite setup.</li>
-        <li>Configure JWT authentication for the portal so as to enable APPs to interact with the portal.</li>
-        <li>Create Rest APIs for create, read, list, delete, edit the products and orders.</li>
-        <li>Order and product transition to different states from receiving to the agency until delivery to the desired persons.</li>
-      </ul>
-      <h4>Angular</h4>
-      <ul>
-        <li>The Frontend for configuring and handling the requests are developed using
-        Angular. Consists of various modules like product management (the products which
-        are donated), Handling request and donation orders, Volunteer gaming interface
-        to promote individuals to participate in Donation drives.</li>
-      </ul>
-
-      <h3>Health care domain multi site project</h3>
-      <p class="light">Health care domain multi site project hosted in Acquia cloud WSF, having
-      multiple sites for pharma, animal health and HR of a pharmaceutical company.
-      Modules used include domain access module, paragraph etc.</p>
-        
-      <h4>Drupal Engineer on various tasks</h4>
-      <ul>
-        <li>Estimation of the development effort by identifying the unique components, pages and number of pages.</li>
-        <li>Worked in the interim support team post delivery of the projects.</li>
-        <li>Create and add content for subsites configured using “Domain access module”.</li>
-      </ul>
-
-      <h3>Informational website for a bank</h3>
-      <p class="light">Website developed using lightning distribution of Drupal 8. This CMS has various
-      details of the Bank, Career Form, Lucky Draw winners list and csv import
-      functionality list.</p>
-      <h4>Lead developer</h4>
-      <ul>
-        <li>Custom module for importing a CSV format list of lucky draw winners into a custom entity, view for listing the custom entity with filter.</li>
-        <li>Google map integration with views and views attachments with ajax filter on the various bank locations.</li>
-      </ul>
-      
-      <h3>Informational website of a real estate company</h3>
-      <p class="light">This website is developed for a real estate company operating in the Middle
-      East. Main functionalities of this CMS include, timeline updates of various
-      projects from Microsoft Azure, update of the latest products (apartments and
-      villas) from CRM, inquiry registrations and updates to CRM.</p>
-        
-      <h4>Lead developer</h4>
-      <ul>
-        <li>Basic configuration of the sites with different content types and setting up the theme.</li>
-        <li>Custom module for integrating latest projects from a CRM through a queue worker. And the updates on the various ongoing projects with images and dates to the system with a Queue worker, The images are fetched from Microsoft Azure.</li>
-        <li>Project Inquiry Form connected to a CRM as data needs to be saved there.</li>
-      </ul>
-    </div>
-  </div>
-
+  <script src="assets/build/main.js" defer></script>
 </body>
 
 </html>

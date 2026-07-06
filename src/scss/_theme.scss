@@ -1,0 +1,38 @@
+// Design tokens: fonts, colors, radii — light & dark themes.
+
+:root {
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --accent-1: #6366f1;
+  --accent-2: #22d3ee;
+  --gradient: linear-gradient(120deg, var(--accent-1), var(--accent-2));
+
+  --radius: 16px;
+  --container: 1120px;
+  --transition: 0.25s ease;
+}
+
+[data-theme="dark"] {
+  --bg: #0b1120;
+  --bg-elev: #111a2e;
+  --bg-card: rgba(255, 255, 255, 0.04);
+  --border: rgba(255, 255, 255, 0.1);
+  --text: #e6ebf5;
+  --text-soft: #9aa7bd;
+  --nav-bg: rgba(11, 17, 32, 0.8);
+  --shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+  --chip-bg: rgba(255, 255, 255, 0.06);
+}
+
+[data-theme="light"] {
+  --bg: #f6f8fc;
+  --bg-elev: #ffffff;
+  --bg-card: #ffffff;
+  --border: rgba(15, 23, 42, 0.1);
+  --text: #10182b;
+  --text-soft: #51607a;
+  --nav-bg: rgba(246, 248, 252, 0.85);
+  --shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+  --chip-bg: rgba(15, 23, 42, 0.05);
+}

@@ -1,0 +1,26 @@
+// Site footer.
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 26px 0;
+  margin-top: 40px;
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  color: var(--text-soft);
+  font-size: 0.85rem;
+}
+
+.to-top {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--text-soft);
+
+  &:hover {
+    color: var(--accent-2);
+  }
+}

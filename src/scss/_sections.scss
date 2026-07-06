@@ -1,0 +1,168 @@
+// Generic section chrome, About, Experience timeline and badges.
+
+.section {
+  padding: 72px 24px;
+}
+
+.section-title {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  font-size: clamp(1.6rem, 3.4vw, 2.2rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 40px;
+}
+
+.section-num {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  color: var(--accent-2);
+}
+
+// About
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 40px;
+}
+
+.about-text {
+  font-size: 1.1rem;
+  color: var(--text-soft);
+
+  strong {
+    color: var(--text);
+  }
+}
+
+.about-highlights {
+  list-style: none;
+  display: grid;
+  gap: 12px;
+
+  li {
+    position: relative;
+    padding: 14px 16px 14px 40px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--bg-card);
+    font-size: 0.95rem;
+
+    &::before {
+      content: "✓";
+      position: absolute;
+      left: 16px;
+      color: var(--accent-2);
+      font-weight: 700;
+    }
+  }
+}
+
+// Experience timeline
+.timeline {
+  list-style: none;
+  position: relative;
+  padding-left: 28px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    bottom: 6px;
+    width: 2px;
+    background: linear-gradient(var(--accent-1), var(--accent-2));
+    opacity: 0.5;
+  }
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: 42px;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -28px;
+    top: 7px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--bg);
+    border: 3px solid var(--accent-1);
+  }
+
+  h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+
+  .at {
+    font-weight: 500;
+    color: var(--text-soft);
+    font-size: 0.95rem;
+  }
+
+  ul {
+    list-style: none;
+    display: grid;
+    gap: 6px;
+
+    li {
+      position: relative;
+      padding-left: 20px;
+      color: var(--text-soft);
+      font-size: 0.95rem;
+
+      &::before {
+        content: "▹";
+        position: absolute;
+        left: 0;
+        color: var(--accent-1);
+      }
+    }
+  }
+}
+
+.timeline-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+
+.timeline-date {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--accent-2);
+  font-weight: 600;
+}
+
+// Badges
+.badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.badge-current {
+  background: color-mix(in srgb, var(--accent-2) 15%, transparent);
+  color: var(--accent-2);
+  border: 1px solid color-mix(in srgb, var(--accent-2) 40%, transparent);
+}
+
+.badge-dev {
+  background: color-mix(in srgb, #f59e0b 15%, transparent);
+  color: #f59e0b;
+  border: 1px solid color-mix(in srgb, #f59e0b 40%, transparent);
+}
